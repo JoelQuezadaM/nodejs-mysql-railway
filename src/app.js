@@ -4,7 +4,7 @@ import {pool} from './db.js'
 const app = express();
 
 app.get('/', (req,res) =>{
-    res.send('Bienvenido al servidor otra vez')
+    res.send('Bienvenido al servidor otra vez 2')
 })
 
 app.get('/ping', async (req,res) =>{
