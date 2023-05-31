@@ -12,7 +12,7 @@ app.get('/', (req,res) =>{
 })
 
 app.get('/ping', async (req,res) =>{
-    const [result] = await pool.query(`select nombre from clientes`)
+    const [result] = await pool.query(`select * from clientes`)
     //const result =pool.query(`select "HOLA"`)
      res.json(result)
 })
